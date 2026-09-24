@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gemini AI Learning Assistant</title>
+    <link rel="stylesheet" href="./gem.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <h1>🤖 AI Learning Assistant</h1>
+        <p class="subtitle">Powered by Google Gemini</p>
+
+        <div id="chatBox">
+
+            <div class="ai-message">
+                Hello! 👋<br>
+                I am your AI Learning Assistant.<br>
+                Ask me any question related to your studies.
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="question"
+                placeholder="Ask your question..."
+                onkeydown="checkEnter(event)"
+            >
+
+            <button onclick="askQuestion()">Send</button>
+
+        </div>
+
+    </div>
+
+    <script src="./gem.js"></script>
+
+</body>
+</html>
